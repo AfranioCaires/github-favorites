@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Favorites</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>Github Favorites</h1>
+      <div class="search">
+        <label for="input-search" class="sr-only">Search for a user</label>
+        <input id="input-search" type="text" placeholder="Search for a user" />
+        <button>&plus;</button>
+      </div>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="user">
+              <img src="http://github.com/afraniocaires.png" alt="profile picture">
+              <a href="http://github.com/afraniocaires" target="_blank" rel="noopener noreferrer">
+                <p>Afranio Caires</p>
+                <span>afraniocaires</span>
+              </a>
+            </td>
+            <td class="pepositories">12</td>
+            <td class="followers">50</td>
+            <td><button class="remove">&times;</button></td>
+          </tr>
+          <tr>
+            <td class="user">
+              <img src="http://github.com/afraniocaires.png" alt="profile picture">
+              <a href="http://github.com/afraniocaires" target="_blank" rel="noopener noreferrer">
+                <p>Afranio Caires</p>
+                <span>afraniocaires</span>
+              </a>
+            </td>
+            <td class="pepositories">12</td>
+            <td class="followers">50</td>
+            <td><button class="remove">&times;</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+
+</html>
