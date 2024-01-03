@@ -9,9 +9,7 @@ You can preview the live version of this project hosted on GitHub Pages. This al
 
 To access the live version, navigate to the following URL:
 
-```url
-https://<afraniocaires>.github.io/github-favorites/
-```
+To access the live version, click [here](https://afraniocaires.github.io/github-favorites/).
 
 ## Classes
 
