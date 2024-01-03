@@ -4,7 +4,7 @@ export class GithubUser {
 
     return fetch(endpoint).then((data) =>
       data.json().then(({ login, name, public_repos, followers }) => ({
-        login,
+        login: login.toLowerCase(),
         name,
         followers,
         public_repos,
@@ -29,13 +29,16 @@ export class Favorites {
 
   async add(user) {
     try {
+      if (user === "") throw new Error("Please enter a username");
+      const userExists = this.entries.find((entry) => entry.login === user);
+      if (userExists) throw new Error("User already exists");
+
       const githubUser = await GithubUser.search(user);
       if (githubUser.login === undefined) throw new Error("User not found");
-      if (this.entries.some((entry) => entry.login === githubUser.login))
-        throw new Error("User already exists");
+
       this.entries = [githubUser, ...this.entries];
-      this.update();
       this.save();
+      this.update();
     } catch (error) {
       alert(error.message);
     }
