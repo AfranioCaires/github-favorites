@@ -144,6 +144,14 @@ table {
       background-color: #ddd;
     }
   }
+
+  & tr:last-child td:first-child {
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  & tr:last-child td:last-child {
+    border-bottom-right-radius: 0.25rem;
+  }
 }
 
 @media (max-width: 600px) {
