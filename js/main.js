@@ -1,2 +1,2 @@
 import { FavoritesView } from "./favorites.js";
-new FavoritesView("#app");
+const app = new FavoritesView("#app");
